@@ -19,9 +19,9 @@ def remover_tarefa(nome_tarefa):
     tarefa = db.get(Tarefa.tarefa == nome_tarefa)
     if tarefa:
         db.remove(Tarefa.tarefa == nome_tarefa)
-        print(f"Tarefa '{nome_tarefa}' foi removida com sucesso!")
+        print(f"Tarefa '{nome_tarefa}' removida com sucesso!")
     else:
-        print("Tarefa não foi encontrada!")
+        print("Tarefa não encontrada!")
 
 # Função principal
 def main():
@@ -46,7 +46,7 @@ def main():
         elif opcao == '4':
             break
         else:
-            print("Opção inválida! Coloque apenas uma das opções condizentes.")
+            print("Opção inválida! Tente novamente.")
 
     # Fechando a conexão com o banco de dados
     db.close()
