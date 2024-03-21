@@ -26,7 +26,7 @@ def remover_tarefa(nome_tarefa):
 # Função principal
 def main():
     while True:
-        print("\n=== Lista de Tarefas ===")
+        print("\n==== Lista de Tarefas ====")
         print("1. Adicionar Tarefa")
         print("2. Listar Tarefas")
         print("3. Remover Tarefa")
